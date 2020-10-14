@@ -16,9 +16,7 @@ strategy:
       python.version: '3.5'
     Python36:
       python.version: '3.6'
-    Python37:
-      python.version: '3.7'
-
+    
 steps:
 - task: UsePythonVersion@0
   inputs:
@@ -35,7 +33,3 @@ steps:
     pytest
   displayName: 'pytest'
 
-steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.6'
